@@ -8,15 +8,12 @@ namespace School.Models
 {
     public class Grade
     {
+        //this entity should be deleted. Using TeacherToSubjectToStudent now
         public int Id { get; set; }
         public EMarkValues GradeValues { get; set; }
         public EMarkValues SemesterEndGrade { get; set; }
         public EMarkValues FinalGrade { get; set; }
         public ESemester Semester { get; set; }
-        public virtual Student Student { get; set; }
-        public virtual Teacher Teacher { get; set; }
-        public virtual Subject Subject { get; set; }
-
         public Grade()
         { }
 
